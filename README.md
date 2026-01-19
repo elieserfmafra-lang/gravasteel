@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>GravaSteel Personalizados</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GravaSteel Personalizados | Copos Personalizados a Laser</title>
+  <meta name="description" content="Copos personalizados a laser em inox. Gravação permanente, acabamento premium e entrega profissional." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    :root {
+      --preto: #0f0f0f;
+      --grafite: #1c1c1c;
+      --prata: #cfcfcf;
+      --laser: #ff7a00;
+    }
+
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: var(--preto);
       color: white;
+      line-height: 1.6;
     }
 
     header {
@@ -19,65 +35,161 @@
       text-align: center;
     }
 
-    h1 {
+    header h1 {
       font-size: 3rem;
-      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
 
-    span {
-      color: #ff7a00;
+    header span {
+      color: var(--laser);
     }
 
-    p {
-      color: #ccc;
-      font-size: 1.1rem;
+    header p {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: var(--prata);
     }
 
-    a {
+    .btn {
       display: inline-block;
-      margin-top: 25px;
+      margin-top: 30px;
       padding: 15px 35px;
-      background: #ff7a00;
+      background: var(--laser);
       color: black;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff9a3c;
     }
 
     section {
-      padding: 60px 20px;
-      max-width: 900px;
+      padding: 70px 20px;
+      max-width: 1200px;
       margin: auto;
     }
 
-    footer {
-      text-align: center;
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid var(--laser);
+      padding-left: 15px;
+    }
+
+    .sobre p {
+      max-width: 800px;
+      color: var(--prata);
+    }
+
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: var(--grafite);
       padding: 30px;
-      background: black;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--laser);
+    }
+
+    .card p {
+      color: var(--prata);
+      font-size: 0.95rem;
+    }
+
+    .contato {
+      text-align: center;
+    }
+
+    .contato p {
+      color: var(--prata);
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 30px 20px;
       color: #777;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: var(--laser);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1><span>GravaSteel</span> Personalizados</h1>
-  <p>Copos personalizados a laser com acabamento premium</p>
-  <a href="#">Solicitar Orçamento</a>
-</header>
+  <header>
+    <h1><span>GravaSteel</span> Personalizados</h1>
+    <p>Copos personalizados a laser com acabamento premium</p>
+    <a href="https://wa.me/5547920008696" class="btn">Solicitar Orçamento</a>
+  </header>
 
-<section>
-  <h2>Quem Somos</h2>
-  <p>
-    A GravaSteel Personalizados é especializada em copos personalizados em inox,
-    com gravação a laser permanente e acabamento profissional.
-  </p>
-</section>
+  <section class="sobre">
+    <h2>Quem Somos</h2>
+    <p>
+      A <strong>GravaSteel Personalizados</strong> é especializada na personalização de copos em inox por gravação a laser. 
+      Trabalhamos com tecnologia de alta precisão para entregar produtos duráveis, sofisticados e exclusivos, ideais para presentes, eventos e brindes corporativos.
+    </p>
+  </section>
 
-<footer>
-  © 2026 GravaSteel Personalizados
-</footer>
+  <section>
+    <h2>Nossos Produtos</h2>
+    <div class="servicos">
+      <div class="card">
+        <h3>Copos Térmicos</h3>
+        <p>Personalização a laser permanente em copos térmicos de inox.</p>
+      </div>
+      <div class="card">
+        <h3>Copos Estilo Stanley</h3>
+        <p>Gravação premium para copos estilo Stanley e similares.</p>
+      </div>
+      <div class="card">
+        <h3>Brindes Corporativos</h3>
+        <p>Copos personalizados com logotipo para empresas e eventos.</p>
+      </div>
+      <div class="card">
+        <h3>Datas Comemorativas</h3>
+        <p>Copos exclusivos para aniversários, casamentos e formaturas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato">
+    <h2>Contato</h2>
+    <p>Atendemos sob encomenda. Entre em contato e personalize o seu copo.</p>
+    <p><strong>WhatsApp:</strong> (47) 2000-8696</p>
+    <p><strong>Instagram:</strong> @gravasteel.personalizados</p>
+  </section>
+
+  <footer>
+    © 2026 <span>GravaSteel Personalizados</span> • Todos os direitos reservados
+  </footer>
 
 </body>
 </html>
